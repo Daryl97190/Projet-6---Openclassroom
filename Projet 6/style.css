@@ -1,0 +1,195 @@
+html { 
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+  background: url(img/battle.png);
+  width: 100%;
+}
+article {
+  display: none;
+}
+#Titre1 {
+  color: #982312 ;
+  font-family: 'Bangers', cursive;
+  font-size: 500%;
+}
+p {
+  font-family: 'Bangers', cursive;
+}
+h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 270%;
+  color: #982312;
+}
+.rules {
+  font-family: Georgia,'Times New Roman', Times, serif;
+  font-style: oblique;
+}
+#regle {
+  background-color: #982312;
+  padding: 5px;
+  color: whitesmoke;
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 12px 12px 2px 1px;
+  cursor: pointer;
+}
+#regle:hover {
+  background-color: whitesmoke;
+  color: #982312;
+}
+#backgroundpopUp {
+  margin-top:50px ;
+  background-color: #94A4A8 ;
+  position: relative;
+  opacity: 0.7;
+  padding: 1em;
+  display: none;
+
+}
+#nouvellePartie {
+  background-color: whitesmoke ;
+  padding: 5px;
+  color: #982312;
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+  border-radius: 15px;
+  width: 450px;
+  box-shadow: 12px 12px 2px 1px;
+  cursor: pointer;
+}
+#bouttonfermer {
+  float: right;
+  cursor: pointer;
+}
+#terminerMonTour {
+  background-color:  whitesmoke;
+  padding: 5px;
+  color: #982312;
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 12px 12px 2px 1px;
+  cursor: pointer;
+  display: none;
+}
+.joueurs {
+  width: 310px;
+  height: 310px;
+}
+#grilledujeu {
+  border: 7px outset #982312;
+  border-radius: 7px;
+  display: none;
+}
+.case {
+  width: calc(1/10 * 100%);
+  height: calc(1/10 * 100%);
+  border: 1px solid #713A25;
+  height: 50px;
+  display: inline-block;
+  margin-bottom: -6px;
+}
+
+.obstacle{ 
+  background-image: url(img/brique.jpg); 
+  background-size: 250%; 
+  
+} 
+div .joueuralexmason {
+  background-image: url(img/joueur1miniature.png) ;
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: center ; 
+
+}
+
+div .joueursolidsnake{
+  background-image: url(img/snakeminiature2.png) ;
+  background-size: 23%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+#solidSnake {
+  color :white;
+}
+#descriptionAlexMason {
+  font-family: 'Bangers', cursive;
+  font-size: 25px;
+}
+#descriptionSolidSnake {
+  font-family: 'Bangers', cursive;
+  font-size: 25px;
+  color: white;
+}
+#infosAttaque {
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+  color: #982312;
+  text-shadow: 2px 2px 2px whitesmoke;
+}
+.Poing-americain {
+  background-image: url(img/coupDePoingAmericain.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%;
+}
+
+.Famas {
+  background-image: url(img/famas.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.MachineGun {
+  background-image: url(img/machinegun.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.Machette {
+  background-image: url(img/machette.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+.LanceRoquette {
+  background-image: url(img/lanceroquette.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+#attaque {
+  display: none ;
+  background-color:  whitesmoke;
+  padding: 5px;
+  color: #982312;
+  margin-right: 75px;
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+  border-radius: 15px;
+  width: 150px;
+  box-shadow: 12px 12px 2px 1px;
+  cursor: pointer;
+}
+#defendre {
+  display: none; 
+  background-color: #982312;
+  padding: 5px;
+  color: whitesmoke;
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+  border-radius: 15px;
+  width: 175px;
+  box-shadow: 12px 12px 2px 1px;
+  cursor: pointer;
+}
+.surbrillance {
+  filter: grayscale(80%);
+}

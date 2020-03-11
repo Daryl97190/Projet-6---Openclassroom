@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!--Encodage-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Créez un jeu de plateau tour par tour en JS">
+  <meta name="author" content="Daryl LIVIO">
+  <!--Boostrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="style.css">
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="img/Jeu.jpg" type="image/x-icon">
+  <title>Créez un jeu de plateau tour par tour en JS</title>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <h1 class="text-center" id="Titre1" >Call of Duty vs Metal Gear Solid</h1><br><br>
+  </header>
+  <div class="container text-center">
+    <button id="regle">Comment jouer ?</button>
+    <div id="backgroundpopUp">
+      <div id="popUP">
+        <h2 class="rules">Règle du jeu <span id="bouttonfermer">&times;</span> </h2>
+        <p class="rules">Cliquez sur les touches directionnelles de votre clavier pour déplacer votre joueur de une a trois cases et cliquez sur le boutton terminer ensuite <strong>" MON TOUR "</strong> afin que le joueur adverse puisse se déplacer à son tour. Passez sur une case contenant une arme pour en changer. Lorsque les deux joueurs sont côte à côte, un combat à mort s'engage, ils peuvent choisir de s'attaquer ou de se défendre. Dès que l'un des joueurs n'a plus de points de vie, l'autre joueur l'emporte.
+        </p>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container-fluid" id="zoneDessin">
+    <div class="row">
+      <div class="col-md-3 col-lg-3 col-sm-12">
+        <article>  
+          <h3 class="text-center" class="test">Alex Mason</h3>
+          <p class="text-center">Alex Mason est un agent de la Central Intelligence Agency (C.I.A.) et un ancien Capitaine des Marines de l'United States Marines Corps (U.S.M.C). Il a participé a la Guerre de Corée. Cela lui puis a gagné en réputation qui a conduit à la CIA de le recruter pour leur Division des activités spéciales.</p>
+          <div class="text-center">
+            <img src="img/alexMason.png" id="alexMason" class="joueurs" alt="Alex Mason">
+            <p id="descriptionAlexMason" class="text-center" ></p>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-6 col-sm-12">
+        <div class ="grille" id="grilledujeu">
+        </div>
+        <div class="text-center">
+          <br>
+          <button id="terminerMonTour">Terminer mon tour</button>
+          <p id="infosAttaque"></p>
+        </div>
+        <br>  
+        <div class="text-center">
+          <button type="button" id="nouvellePartie">Nouvelle partie</button>
+          <button type="button" id="attaque">Attaque</button>
+          <button type="button" id="defendre">Defendre</button>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3 col-sm-12">
+        <article>
+          <h3 class="text-center ">Solid Snake</h3>
+          <p class="text-center" id="solidSnake">Solid Snake incarne un soldat d'élite expert en infiltration et en combat rapproché. Surentraîné, il est apte à remplir, en solitaire, des missions ultra-secrètes et dangereuses en territoire ennemi. Il connaît les multiples aspects de la guerre, du combat et des conflits armés.</p>
+          <div class="text-center">
+            <img src="img/snake.png"  id="SnakePhoto" class="joueurs" alt="Solid Snake" >
+            <p id="descriptionSolidSnake" class="text-center"></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</div>
+
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="grille.js" type="module"></script>
+<script src="case.js" type="module"></script>
+<script src="arme.js" type="module"></script>
+<script src="joueurs.js" type="module"></script> 
+<script src="jeu.js" type="module"></script>
+</body>
+
+</html>
+
