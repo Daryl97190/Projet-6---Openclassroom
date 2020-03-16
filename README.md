@@ -1,6 +1,6 @@
 # Projet 6 - Openclassroom
 
-## Projet 6 Openclassroom Créez un jeu de plateau tour par tour en JS
+## Créez un jeu de plateau tour par tour en JS
 
 Ce projet consistera à créer un jeu en ligne en JavaScript dans lequel 2 joueurs évoluent chacun leur tour pour s'affronter. Comme dans Highlander, il ne peut en rester qu'un !
 
